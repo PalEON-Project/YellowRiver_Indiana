@@ -8,6 +8,9 @@ setwd("~/Dropbox/YR_Manuscript/YellowRiver_Indiana")
   #original data, in Albers, for comparing composition
   #pca data, in Albers, for comparing environment
   #density data, in UTM, for comparing structure
+#we have two projections because data from collaborators came from both NAD 1983 UTM zone 16 
+  #and from NAD 1983 Great Lakes and St. Lawrence Albers
+
 
 
 #read in line in Albers projection line
