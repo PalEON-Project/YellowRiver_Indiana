@@ -1,0 +1,26 @@
+$`Mod densW`
+[1] 111.5318
+
+$`se densw`
+[1] 22.08739
+
+$`Mod densE`
+[1] 161.1014
+
+$`se dense`
+[1] 31.75943
+
+$`t-test mod`
+
+	Two Sample t-test
+
+data:  density by line
+t = 1.2491, df = 18, p-value = 0.2276
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -33.80075 132.94010
+sample estimates:
+mean in group East mean in group West 
+          161.1014           111.5318 
+
+

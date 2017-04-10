@@ -1,0 +1,716 @@
+"","drainagecl","MUKEY"
+"1","Moderately well drained",165295
+"2","Very poorly drained",165296
+"3","Very poorly drained",165297
+"4","Well drained",165315
+"5","Well drained",165316
+"6","Somewhat poorly drained",165317
+"7","Somewhat poorly drained",165318
+"8","Somewhat poorly drained",165319
+"9","Somewhat poorly drained",165321
+"10","Moderately well drained",165322
+"11","Moderately well drained",165323
+"12","Excessively drained",165324
+"13","Excessively drained",165325
+"14","Excessively drained",165326
+"15","Excessively drained",165327
+"16","Excessively drained",165328
+"17","Moderately well drained",165329
+"18","Poorly drained",165330
+"19","Somewhat excessively drained",165346
+"20","Somewhat excessively drained",165347
+"21","Somewhat excessively drained",165348
+"22","Well drained",165349
+"23","Well drained",165350
+"24","Somewhat poorly drained",165351
+"25","Somewhat poorly drained",165352
+"26","Somewhat poorly drained",165356
+"27","Well drained",165357
+"28","Well drained",165358
+"29","Very poorly drained",165359
+"30","Very poorly drained",165360
+"31","Poorly drained",165368
+"32","Very poorly drained",165369
+"33","Moderately well drained",165370
+"34","Moderately well drained",165371
+"35","Poorly drained",165372
+"36","Very poorly drained",165373
+"37","Very poorly drained",165374
+"38","Very poorly drained",165377
+"39","Very poorly drained",165378
+"40","Very poorly drained",165379
+"41","Somewhat poorly drained",165380
+"42","Somewhat poorly drained",165386
+"43","Somewhat poorly drained",165402
+"44","Very poorly drained",165403
+"45","Poorly drained",165404
+"46","Moderately well drained",165406
+"47","Moderately well drained",165407
+"48","Moderately well drained",165408
+"49","Moderately well drained",165409
+"50","Excessively drained",165411
+"51","Somewhat poorly drained",165412
+"52","Very poorly drained",165414
+"53","Very poorly drained",165415
+"54","Poorly drained",165416
+"55","Well drained",165426
+"56","Well drained",165427
+"57","Very poorly drained",165432
+"58","Very poorly drained",165433
+"59","",165434
+"60","Well drained",165457
+"61","Well drained",165458
+"62","Well drained",165459
+"63","Well drained",165460
+"64","Well drained",165461
+"65","Poorly drained",165466
+"66","Poorly drained",165467
+"67","Somewhat poorly drained",165468
+"68","Somewhat poorly drained",165469
+"69","Poorly drained",165470
+"70","Excessively drained",165475
+"71","Excessively drained",165476
+"72","Excessively drained",165477
+"73","Excessively drained",165478
+"74","Excessively drained",165479
+"75","Well drained",165495
+"76","",165498
+"77","",165499
+"78","",165500
+"79","",165501
+"80","",165502
+"81","",165503
+"82","",165504
+"83","",165505
+"84","",165506
+"85","",165507
+"86","",165508
+"87","",165509
+"88","",165510
+"89","",165511
+"90","",165512
+"91","",165513
+"92","Well drained",165514
+"93","Well drained",165515
+"94","Well drained",165516
+"95","Somewhat poorly drained",165524
+"96","",165525
+"97","",165526
+"98","Moderately well drained",165527
+"99","Moderately well drained",165528
+"100","Moderately well drained",165529
+"101","Moderately well drained",165530
+"102","Very poorly drained",165531
+"103","Excessively drained",268409
+"104","Somewhat poorly drained",268411
+"105","Poorly drained",268412
+"106","Very poorly drained",162556
+"107","Somewhat poorly drained",162557
+"108","Poorly drained",162558
+"109","Somewhat poorly drained",162559
+"110","Somewhat poorly drained",162560
+"111","Moderately well drained",162561
+"112","Moderately well drained",162562
+"113","Excessively drained",162563
+"114","Poorly drained",162564
+"115","Somewhat poorly drained",162565
+"116","Very poorly drained",162566
+"117","Poorly drained",162567
+"118","Poorly drained",162568
+"119","Very poorly drained",162569
+"120","Somewhat poorly drained",162570
+"121","Very poorly drained",162571
+"122","Very poorly drained",162572
+"123","Well drained",162573
+"124","Well drained",162574
+"125","Well drained",162575
+"126","Somewhat poorly drained",162576
+"127","Well drained",162577
+"128","Well drained",162578
+"129","Well drained",162579
+"130","Moderately well drained",162580
+"131","Moderately well drained",162581
+"132","Somewhat poorly drained",162582
+"133","Very poorly drained",162583
+"134","Poorly drained",162584
+"135","Well drained",162585
+"136","Well drained",162586
+"137","Very poorly drained",162587
+"138","",162588
+"139","Excessively drained",162589
+"140","Excessively drained",162590
+"141","Excessively drained",162591
+"142","Well drained",162592
+"143","Well drained",162593
+"144","Well drained",162594
+"145","Very poorly drained",162595
+"146","",162596
+"147","Very poorly drained",162598
+"148","Poorly drained",162599
+"149","Well drained",162600
+"150","Well drained",162601
+"151","Well drained",162602
+"152","",1452045
+"153","Moderately well drained",160846
+"154","Poorly drained",160847
+"155","Somewhat poorly drained",160848
+"156","Somewhat poorly drained",160849
+"157","Poorly drained",160850
+"158","Somewhat poorly drained",160851
+"159","Somewhat poorly drained",160852
+"160","Well drained",160853
+"161","Well drained",160854
+"162","Somewhat poorly drained",160855
+"163","Moderately well drained",160856
+"164","Well drained",160857
+"165","Somewhat excessively drained",160858
+"166","Somewhat excessively drained",160859
+"167","Somewhat poorly drained",160860
+"168","Somewhat poorly drained",160861
+"169","Somewhat poorly drained",160862
+"170","Very poorly drained",160863
+"171","Poorly drained",160864
+"172","Very poorly drained",160865
+"173","Very poorly drained",160866
+"174","Very poorly drained",160867
+"175","Well drained",160868
+"176","Very poorly drained",160869
+"177","Somewhat poorly drained",160870
+"178","Very poorly drained",160871
+"179","Very poorly drained",160872
+"180","Well drained",160873
+"181","Well drained",160874
+"182","Well drained",160875
+"183","Well drained",160876
+"184","Well drained",160877
+"185","Well drained",160878
+"186","Well drained",160879
+"187","Well drained",160880
+"188","Well drained",160881
+"189","Well drained",160882
+"190","Well drained",160883
+"191","Well drained",160884
+"192","Well drained",160885
+"193","Well drained",160886
+"194","Well drained",160887
+"195","Moderately well drained",160888
+"196","Moderately well drained",160889
+"197","Moderately well drained",160890
+"198","Moderately well drained",160891
+"199","Well drained",160892
+"200","Well drained",160893
+"201","Moderately well drained",160894
+"202","Moderately well drained",160895
+"203","Moderately well drained",160896
+"204","Moderately well drained",160897
+"205","Well drained",160898
+"206","Well drained",160899
+"207","Well drained",160900
+"208","Well drained",160901
+"209","Well drained",160902
+"210","Well drained",160903
+"211","Very poorly drained",160904
+"212","Very poorly drained",160905
+"213","Very poorly drained",160906
+"214","",160907
+"215","Poorly drained",160908
+"216","Well drained",160909
+"217","Well drained",160910
+"218","Well drained",160911
+"219","Well drained",160912
+"220","Well drained",160913
+"221","Well drained",160914
+"222","Very poorly drained",160915
+"223","Poorly drained",160916
+"224","Poorly drained",160917
+"225","Well drained",160918
+"226","Well drained",160919
+"227","Somewhat poorly drained",160920
+"228","Very poorly drained",160921
+"229","Well drained",160922
+"230","Moderately well drained",160923
+"231","",160924
+"232","Very poorly drained",160926
+"233","Poorly drained",160927
+"234","Poorly drained",160928
+"235","Well drained",160929
+"236","Well drained",160930
+"237","Well drained",160931
+"238","Somewhat poorly drained",160932
+"239","Very poorly drained",272646
+"240","Somewhat poorly drained",272647
+"241","Somewhat poorly drained",272648
+"242","Moderately well drained",272649
+"243","Very poorly drained",272650
+"244","Excessively drained",272651
+"245","Excessively drained",272652
+"246","Excessively drained",272653
+"247","Very poorly drained",272654
+"248","Well drained",272655
+"249","Well drained",272656
+"250","Well drained",272657
+"251","Very poorly drained",272658
+"252","Well drained",272659
+"253","Well drained",272660
+"254","Somewhat poorly drained",272661
+"255","Poorly drained",272662
+"256","Moderately well drained",272663
+"257","Very poorly drained",272664
+"258","Somewhat poorly drained",272665
+"259","Very poorly drained",272666
+"260","Very poorly drained",272667
+"261","Very poorly drained",272668
+"262","Very poorly drained",272669
+"263","Very poorly drained",272670
+"264","Poorly drained",272671
+"265","Moderately well drained",272672
+"266","Moderately well drained",272673
+"267","Moderately well drained",272674
+"268","Somewhat poorly drained",272675
+"269","Very poorly drained",272676
+"270","Very poorly drained",272677
+"271","Well drained",272678
+"272","Well drained",272679
+"273","Very poorly drained",272680
+"274","Very poorly drained",272681
+"275","Poorly drained",272682
+"276","Poorly drained",272683
+"277","Well drained",272684
+"278","Well drained",272685
+"279","Well drained",272686
+"280","Well drained",272687
+"281","Well drained",272688
+"282","Somewhat poorly drained",272689
+"283","Very poorly drained",272690
+"284","Somewhat poorly drained",272691
+"285","Somewhat poorly drained",272692
+"286","Very poorly drained",272693
+"287","Well drained",272694
+"288","Well drained",272695
+"289","Well drained",272696
+"290","Well drained",272697
+"291","Well drained",272698
+"292","Well drained",272699
+"293","Excessively drained",272700
+"294","Well drained",272701
+"295","",272702
+"296","",272703
+"297","",272704
+"298","",272705
+"299","Very poorly drained",272706
+"300","Very poorly drained",272707
+"301","Poorly drained",272708
+"302","",1453559
+"303","",162052
+"304","Somewhat poorly drained",1702515
+"305","Very poorly drained",1702523
+"306","Very poorly drained",1702524
+"307","Very poorly drained",1702528
+"308","Very poorly drained",1702533
+"309","Very poorly drained",1702537
+"310","Very poorly drained",1702538
+"311","Very poorly drained",1702539
+"312","Very poorly drained",1702540
+"313","Very poorly drained",1702541
+"314","Poorly drained",1702542
+"315","Somewhat excessively drained",1702543
+"316","Somewhat excessively drained",1702544
+"317","Somewhat poorly drained",1702545
+"318","Somewhat poorly drained",1702546
+"319","Poorly drained",1702548
+"320","Very poorly drained",1702549
+"321","Very poorly drained",1702550
+"322","Very poorly drained",1702551
+"323","Very poorly drained",1702553
+"324","Very poorly drained",1702554
+"325","Poorly drained",1702556
+"326","Very poorly drained",1702557
+"327","Very poorly drained",1702558
+"328","Well drained",1702559
+"329","Well drained",1702560
+"330","Well drained",1702561
+"331","Very poorly drained",1702562
+"332","Poorly drained",1702563
+"333","Poorly drained",1702564
+"334","Well drained",1702565
+"335","Well drained",1702566
+"336","Excessively drained",1702570
+"337","Excessively drained",1702571
+"338","Somewhat poorly drained",1702572
+"339","Poorly drained",2451223
+"340","Very poorly drained",2451224
+"341","Very poorly drained",2451225
+"342","Very poorly drained",2451226
+"343","Very poorly drained",2451228
+"344","Very poorly drained",2451229
+"345","Somewhat poorly drained",2451230
+"346","Excessively drained",2451231
+"347","",2451232
+"348","Very poorly drained",2451235
+"349","Excessively drained",2451239
+"350","Well drained",2451240
+"351","Somewhat poorly drained",2451242
+"352","Well drained",2451243
+"353","Somewhat poorly drained",2453035
+"354","Moderately well drained",2481932
+"355","Moderately well drained",2481933
+"356","Well drained",2481935
+"357","Well drained",2481936
+"358","Well drained",2481938
+"359","Well drained",2481940
+"360","Well drained",2481945
+"361","Well drained",2481946
+"362","Well drained",2481947
+"363","Well drained",2481950
+"364","Poorly drained",2481952
+"365","Excessively drained",2481958
+"366","Excessively drained",2481959
+"367","Excessively drained",2481960
+"368","Excessively drained",2481963
+"369","Well drained",2481964
+"370","Well drained",2481965
+"371","Well drained",2481966
+"372","Well drained",2481967
+"373","Well drained",2481969
+"374","Well drained",2481970
+"375","",2481971
+"376","Poorly drained",2481973
+"377","Well drained",2481976
+"378","Well drained",2481978
+"379","Poorly drained",2482292
+"380","",2485504
+"381","",2485506
+"382","",2485508
+"383","",2485510
+"384","",2485511
+"385","",2485512
+"386","",2485513
+"387","",2485514
+"388","",2485515
+"389","",2485516
+"390","",2485517
+"391","",2485519
+"392","",2485520
+"393","",2485521
+"394","",2485522
+"395","",2485523
+"396","",2485524
+"397","",2485525
+"398","",2485526
+"399","",2485527
+"400","",2485528
+"401","Well drained",2485529
+"402","",2485530
+"403","",2485531
+"404","Very poorly drained",2487330
+"405","Somewhat poorly drained",2487331
+"406","Poorly drained",2487334
+"407","Moderately well drained",2487337
+"408","Moderately well drained",2487338
+"409","Moderately well drained",2487339
+"410","Moderately well drained",2487340
+"411","Somewhat poorly drained",2487341
+"412","Somewhat excessively drained",2495703
+"413","Somewhat poorly drained",2495704
+"414","Somewhat poorly drained",2495705
+"415","",2495706
+"416","Well drained",2495708
+"417","Excessively drained",2495709
+"418","Excessively drained",2495710
+"419","Moderately well drained",2495711
+"420","Moderately well drained",2530222
+"421","Moderately well drained",184918
+"422","Very poorly drained",184919
+"423","Very poorly drained",184920
+"424","Poorly drained",184921
+"425","Excessively drained",184922
+"426","Excessively drained",184923
+"427","Moderately well drained",184924
+"428","Moderately well drained",184925
+"429","Somewhat poorly drained",184926
+"430","Poorly drained",184927
+"431","Somewhat poorly drained",184928
+"432","Moderately well drained",184929
+"433","Somewhat poorly drained",184930
+"434","Poorly drained",184931
+"435","Poorly drained",184932
+"436","Poorly drained",184933
+"437","Somewhat poorly drained",184934
+"438","Moderately well drained",184935
+"439","Moderately well drained",184936
+"440","Poorly drained",184937
+"441","Very poorly drained",184938
+"442","Very poorly drained",184939
+"443","Very poorly drained",184940
+"444","Very poorly drained",184941
+"445","Somewhat poorly drained",184942
+"446","",184943
+"447","Very poorly drained",184944
+"448","Somewhat poorly drained",184945
+"449","Very poorly drained",184946
+"450","Poorly drained",184947
+"451","Poorly drained",184948
+"452","Moderately well drained",184949
+"453","Poorly drained",184950
+"454","Moderately well drained",184951
+"455","Very poorly drained",184952
+"456","Very poorly drained",184953
+"457","Moderately well drained",184954
+"458","Moderately well drained",184955
+"459","Well drained",184956
+"460","Somewhat poorly drained",184957
+"461","Very poorly drained",184958
+"462","Poorly drained",184959
+"463","Moderately well drained",184960
+"464","Very poorly drained",184961
+"465","Very poorly drained",184962
+"466","Somewhat poorly drained",184963
+"467","Poorly drained",184964
+"468","Somewhat poorly drained",184965
+"469","Somewhat poorly drained",184966
+"470","",184967
+"471","Excessively drained",184968
+"472","Moderately well drained",184969
+"473","Poorly drained",184970
+"474","Poorly drained",184971
+"475","",184972
+"476","Excessively drained",184973
+"477","Excessively drained",184974
+"478","Well drained",184975
+"479","Poorly drained",184976
+"480","Somewhat poorly drained",184977
+"481","Somewhat poorly drained",184978
+"482","Somewhat poorly drained",184979
+"483","Well drained",184980
+"484","Moderately well drained",184981
+"485","Moderately well drained",184982
+"486","Moderately well drained",184983
+"487","Moderately well drained",184984
+"488","Moderately well drained",184985
+"489","Moderately well drained",184986
+"490","Poorly drained",184987
+"491","Moderately well drained",184988
+"492","Poorly drained",184989
+"493","Somewhat poorly drained",184990
+"494","Poorly drained",184991
+"495","Moderately well drained",184992
+"496","Very poorly drained",184993
+"497","Poorly drained",184994
+"498","Poorly drained",184995
+"499","Poorly drained",184996
+"500","Very poorly drained",184997
+"501","Very poorly drained",184998
+"502","Somewhat poorly drained",184999
+"503","Moderately well drained",185000
+"504","Moderately well drained",185001
+"505","Very poorly drained",185002
+"506","Very poorly drained",185003
+"507","Poorly drained",185004
+"508","Very poorly drained",185005
+"509","Very poorly drained",185006
+"510","Very poorly drained",185007
+"511","Very poorly drained",185008
+"512","Very poorly drained",162603
+"513","Very poorly drained",162604
+"514","Somewhat poorly drained",162605
+"515","Somewhat poorly drained",162606
+"516","Moderately well drained",162607
+"517","Somewhat excessively drained",162608
+"518","Very poorly drained",162609
+"519","Somewhat poorly drained",162610
+"520","Somewhat poorly drained",162611
+"521","Very poorly drained",162612
+"522","Poorly drained",162613
+"523","Very poorly drained",162614
+"524","Somewhat poorly drained",162615
+"525","Poorly drained",162616
+"526","Poorly drained",162617
+"527","Very poorly drained",162618
+"528","Well drained",162619
+"529","Somewhat poorly drained",162620
+"530","Very poorly drained",162621
+"531","Poorly drained",162622
+"532","Well drained",162623
+"533","Somewhat poorly drained",162624
+"534","Excessively drained",162625
+"535","Excessively drained",162626
+"536","Excessively drained",162627
+"537","Moderately well drained",162628
+"538","Excessively drained",162629
+"539","Poorly drained",162630
+"540","Somewhat poorly drained",162631
+"541","Very poorly drained",162632
+"542","Very poorly drained",162633
+"543","Well drained",162634
+"544","",162635
+"545","Somewhat poorly drained",162636
+"546","Well drained",162637
+"547","Excessively drained",189356
+"548","Poorly drained",200271
+"549","Poorly drained",200282
+"550","Poorly drained",200283
+"551","Very poorly drained",200303
+"552","Very poorly drained",200306
+"553","Moderately well drained",200307
+"554","Somewhat poorly drained",200308
+"555","Somewhat poorly drained",200311
+"556","Somewhat poorly drained",200312
+"557","Poorly drained",200313
+"558","Moderately well drained",200314
+"559","Excessively drained",200315
+"560","Well drained",200316
+"561","Well drained",200317
+"562","Excessively drained",200318
+"563","Excessively drained",200326
+"564","Moderately well drained",200327
+"565","Moderately well drained",200328
+"566","Somewhat poorly drained",200329
+"567","Moderately well drained",202286
+"568","Somewhat poorly drained",202287
+"569","Well drained",243621
+"570","",243641
+"571","",243685
+"572","Very poorly drained",604518
+"573","Very poorly drained",604519
+"574","Very poorly drained",604520
+"575","Very poorly drained",604521
+"576","Very poorly drained",604522
+"577","Very poorly drained",604523
+"578","Very poorly drained",604524
+"579","Very poorly drained",604525
+"580","Very poorly drained",604526
+"581","Very poorly drained",606832
+"582","Very poorly drained",606833
+"583","Very poorly drained",606836
+"584","Very poorly drained",606844
+"585","Very poorly drained",606848
+"586","Well drained",612061
+"587","Poorly drained",612063
+"588","Moderately well drained",612129
+"589","Well drained",612130
+"590","Well drained",612209
+"591","Well drained",612210
+"592","Poorly drained",612211
+"593","Well drained",612212
+"594","Well drained",612213
+"595","",612238
+"596","",612239
+"597","",612240
+"598","",612241
+"599","",612242
+"600","",612243
+"601","",612244
+"602","",612245
+"603","",612246
+"604","",612248
+"605","",612249
+"606","",612250
+"607","",612251
+"608","Well drained",612253
+"609","",612254
+"610","Poorly drained",612255
+"611","",612256
+"612","",612262
+"613","",612264
+"614","",612266
+"615","Somewhat poorly drained",612324
+"616","Somewhat poorly drained",612329
+"617","Somewhat poorly drained",612342
+"618","",612343
+"619","Poorly drained",612344
+"620","Very poorly drained",612346
+"621","Moderately well drained",612347
+"622","Moderately well drained",612349
+"623","Poorly drained",612350
+"624","Well drained",612351
+"625","Well drained",612352
+"626","Poorly drained",612368
+"627","Excessively drained",612370
+"628","Very poorly drained",612451
+"629","Somewhat poorly drained",612453
+"630","Well drained",612664
+"631","Well drained",612665
+"632","Poorly drained",613948
+"633","Moderately well drained",613949
+"634","Well drained",614082
+"635","Well drained",614083
+"636","Well drained",614084
+"637","Somewhat poorly drained",614144
+"638","Very poorly drained",614145
+"639","Very poorly drained",614146
+"640","Excessively drained",614148
+"641","Well drained",614151
+"642","Well drained",615112
+"643","Well drained",615113
+"644","Well drained",615114
+"645","",615115
+"646","",615116
+"647","",615117
+"648","",615118
+"649","",615119
+"650","Well drained",615120
+"651","",615121
+"652","Well drained",618534
+"653","",618535
+"654","Somewhat poorly drained",625101
+"655","Somewhat poorly drained",625108
+"656","Somewhat excessively drained",625113
+"657","Somewhat excessively drained",625114
+"658","Somewhat excessively drained",625115
+"659","Well drained",625123
+"660","Well drained",625124
+"661","Very poorly drained",625127
+"662","Very poorly drained",625131
+"663","Well drained",625136
+"664","Well drained",625137
+"665","Well drained",625138
+"666","Well drained",625139
+"667","Well drained",625140
+"668","Well drained",625142
+"669","Somewhat poorly drained",625162
+"670","Well drained",625165
+"671","Well drained",625166
+"672","Well drained",625167
+"673","Moderately well drained",625185
+"674","Moderately well drained",625186
+"675","Moderately well drained",625187
+"676","Very poorly drained",625188
+"677","Well drained",625189
+"678","Well drained",625190
+"679","Well drained",625191
+"680","Well drained",625192
+"681","Well drained",625193
+"682","Very poorly drained",625194
+"683","Well drained",625196
+"684","Well drained",625197
+"685","Well drained",625198
+"686","Somewhat poorly drained",625217
+"687","Moderately well drained",625238
+"688","Moderately well drained",625239
+"689","",625291
+"690","",625292
+"691","",625293
+"692","",625294
+"693","",625295
+"694","",625296
+"695","Well drained",625297
+"696","Well drained",625298
+"697","Well drained",625299
+"698","",625300
+"699","",625301
+"700","",625302
+"701","",625303
+"702","",625309
+"703","",625310
+"704","Poorly drained",625332
+"705","",625408
+"706","",625409
+"707","",625557
+"708","",625559
+"709","",627866
+"710","",627867
+"711","",627868
+"712","",627869
+"713","Excessively drained",628153
+"714","Somewhat excessively drained",2481934
+"all",NA,1

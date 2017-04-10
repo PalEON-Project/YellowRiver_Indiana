@@ -1,0 +1,17 @@
+"","Line","drainagecl","freq"
+"1","East","",21
+"2","East","Excessively drained",27
+"3","East","Moderately well drained",69
+"4","East","Poorly drained",852
+"5","East","Somewhat excessively drained",26
+"6","East","Somewhat poorly drained",980
+"7","East","Very poorly drained",218
+"8","East","Well drained",929
+"9","West","",45
+"10","West","Excessively drained",389
+"11","West","Moderately well drained",450
+"12","West","Poorly drained",532
+"13","West","Somewhat excessively drained",72
+"14","West","Somewhat poorly drained",575
+"15","West","Very poorly drained",327
+"16","West","Well drained",614

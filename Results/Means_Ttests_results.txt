@@ -1,0 +1,210 @@
+[[1]]
+[[1]]$`W mean`
+[1] 40.26485
+
+[[1]]$`w se`
+[1] 0.337187
+
+[[1]]$`e mean`
+[1] 39.75888
+
+[[1]]$`e se`
+[1] 0.3659786
+
+[[1]]$t
+
+	Two Sample t-test
+
+data:  TDiameter by Line
+t = -1.0052, df = 5672, p-value = 0.3149
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.5877026  0.1892994
+sample estimates:
+mean in group East mean in group West 
+           15.6531            15.8523 
+
+
+
+[[2]]
+[[2]]$`WEST MEANS`
+        temp       precip          DEM   sandtotal_   silttotal_   claytotal_         om_r 
+   9.8535054 1010.4270971  221.9674186   73.2345770   14.5544608    8.2949168    1.0244374 
+      ksat_r        awc_r       kwfact        NCCPI 
+  55.2572029    0.1015912    0.1372004    0.5308202 
+
+[[2]]$`WEST SE`
+        temp       precip          DEM   sandtotal_   silttotal_   claytotal_         om_r 
+0.0013447334 0.2300569594 0.2365314137 0.4209612504 0.2196029455 0.1227800090 0.0173593831 
+      ksat_r        awc_r       kwfact        NCCPI 
+0.6213910876 0.0007903774 0.0016848840 0.0031122932 
+
+[[2]]$`EAST MEANS`
+        temp       precip          DEM   sandtotal_   silttotal_   claytotal_         om_r 
+   9.9210154 1005.6687505  251.7233113   48.0216177   29.7117590   18.7338821    1.4277514 
+      ksat_r        awc_r       kwfact        NCCPI 
+  18.0454004    0.1506278    0.2449808    0.6843346 
+
+[[2]]$`EAST SE`
+        temp       precip          DEM   sandtotal_   silttotal_   claytotal_         om_r 
+0.0011562635 0.2517372717 0.1469927680 0.3192244132 0.1997938492 0.1276956926 0.0186397530 
+      ksat_r        awc_r       kwfact        NCCPI 
+0.3578881000 0.0007046415 0.0015572091 0.0024072946 
+
+
+[[3]]
+[[3]]$temp
+
+	Two Sample t-test
+
+data:  treesel[, i] by Line
+t = 38.162, df = 6124, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.06404212 0.07097790
+sample estimates:
+mean in group East mean in group West 
+          9.921015           9.853505 
+
+
+[[3]]$precip
+
+	Two Sample t-test
+
+data:  treesel[, i] by Line
+t = -13.924, df = 6124, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -5.428279 -4.088414
+sample estimates:
+mean in group East mean in group West 
+          1005.669           1010.427 
+
+
+[[3]]$DEM
+
+	Two Sample t-test
+
+data:  treesel[, i] by Line
+t = 107.73, df = 6124, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 29.21444 30.29735
+sample estimates:
+mean in group East mean in group West 
+          251.7233           221.9674 
+
+
+[[3]]$sandtotal_
+
+	Two Sample t-test
+
+data:  treesel[, i] by Line
+t = -47.956, df = 6124, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -26.24362 -24.18230
+sample estimates:
+mean in group East mean in group West 
+          48.02162           73.23458 
+
+
+[[3]]$silttotal_
+
+	Two Sample t-test
+
+data:  treesel[, i] by Line
+t = 51.128, df = 6124, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 14.57613 15.73846
+sample estimates:
+mean in group East mean in group West 
+          29.71176           14.55446 
+
+
+[[3]]$claytotal_
+
+	Two Sample t-test
+
+data:  treesel[, i] by Line
+t = 58.862, df = 6124, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 10.09130 10.78663
+sample estimates:
+mean in group East mean in group West 
+         18.733882           8.294917 
+
+
+[[3]]$om_r
+
+	Two Sample t-test
+
+data:  treesel[, i] by Line
+t = 15.807, df = 6124, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.3532944 0.4533336
+sample estimates:
+mean in group East mean in group West 
+          1.427751           1.024437 
+
+
+[[3]]$ksat_r
+
+	Two Sample t-test
+
+data:  treesel[, i] by Line
+t = -52.383, df = 6124, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -38.60441 -35.81920
+sample estimates:
+mean in group East mean in group West 
+           18.0454            55.2572 
+
+
+[[3]]$awc_r
+
+	Two Sample t-test
+
+data:  treesel[, i] by Line
+t = 46.395, df = 6124, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.04696463 0.05110855
+sample estimates:
+mean in group East mean in group West 
+         0.1506278          0.1015912 
+
+
+[[3]]$kwfact
+
+	Two Sample t-test
+
+data:  treesel[, i] by Line
+t = 47.032, df = 6124, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.1032879 0.1122728
+sample estimates:
+mean in group East mean in group West 
+         0.2449808          0.1372004 
+
+
+[[3]]$NCCPI
+
+	Two Sample t-test
+
+data:  treesel[, i] by Line
+t = 39.197, df = 6069, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.1458368 0.1611921
+sample estimates:
+mean in group East mean in group West 
+         0.6843346          0.5308202 
+
+
+

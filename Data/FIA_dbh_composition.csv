@@ -1,0 +1,171 @@
+ID,Buffer,FIAspecies,PalEON_L3,plt_cn,time,statecd,dbh,statuscd,spcd
+1,Oak,Quercus velutina,Oak,1.69E+14,2010,18,24.638,1,837
+1,Oak,Prunus serotina,Cherry,1.69E+14,2010,18,35.052,1,762
+1,Oak,Prunus serotina,Cherry,1.69E+14,2010,18,35.814,1,762
+1,Oak,Prunus serotina,Cherry,1.69E+14,2010,18,41.91,1,762
+1,Oak,Prunus serotina,Cherry,1.69E+14,2010,18,51.308,1,762
+2,Oak,Quercus palustris,Oak,2.42E+14,2012,18,64.77,1,830
+2,Oak,Prunus serotina,Cherry,2.42E+14,2012,18,41.91,1,762
+2,Oak,Prunus serotina,Cherry,2.42E+14,2012,18,25.146,1,762
+2,Oak,Nyssa sylvatica,Black gum,2.42E+14,2012,18,28.448,1,693
+4,Oak,Sassafras albidum,Other hardwood,1.45E+13,2013,18,31.242,1,931
+4,Oak,Sassafras albidum,Other hardwood,1.45E+13,2013,18,22.352,1,931
+4,Oak,Sassafras albidum,Other hardwood,1.45E+13,2013,18,28.956,1,931
+4,Oak,Sassafras albidum,Other hardwood,1.45E+13,2013,18,32.766,1,931
+4,Oak,Sassafras albidum,Other hardwood,1.45E+13,2013,18,26.924,1,931
+4,Oak,Sassafras albidum,Other hardwood,1.45E+13,2013,18,21.844,1,931
+4,Oak,Sassafras albidum,Other hardwood,1.45E+13,2013,18,29.972,1,931
+4,Oak,Quercus velutina,Oak,1.45E+13,2013,18,59.436,1,837
+4,Oak,Quercus alba,Oak,1.45E+13,2013,18,27.432,1,802
+4,Oak,Prunus serotina,Cherry,1.45E+13,2013,18,48.768,1,762
+4,Oak,Prunus serotina,Cherry,1.45E+13,2013,18,46.482,1,762
+4,Oak,Prunus serotina,Cherry,1.45E+13,2013,18,40.64,1,762
+4,Oak,Prunus serotina,Cherry,1.45E+13,2013,18,40.64,1,762
+4,Oak,Prunus serotina,Cherry,1.45E+13,2013,18,25.908,1,762
+4,Oak,Prunus serotina,Cherry,1.45E+13,2013,18,53.086,1,762
+4,Oak,Prunus serotina,Cherry,1.45E+13,2013,18,48.006,1,762
+4,Oak,Carya glabra,Hickory,1.45E+13,2013,18,31.75,1,403
+5,Oak,Sassafras albidum,Other hardwood,2.42E+14,2012,18,21.844,1,931
+5,Oak,Sassafras albidum,Other hardwood,2.42E+14,2012,18,21.336,1,931
+5,Oak,Quercus alba,Oak,2.42E+14,2012,18,32.766,1,802
+5,Oak,Quercus alba,Oak,2.42E+14,2012,18,29.464,1,802
+6,Oak,Sassafras albidum,Other hardwood,1.45E+13,2013,18,25.654,1,931
+6,Oak,Quercus palustris,Oak,1.45E+13,2013,18,20.828,1,830
+6,Oak,Quercus palustris,Oak,1.45E+13,2013,18,20.828,1,830
+6,Oak,Quercus palustris,Oak,1.45E+13,2013,18,25.4,1,830
+6,Oak,Prunus serotina,Cherry,1.45E+13,2013,18,22.098,1,762
+7,Oak,Quercus velutina,Oak,2.42E+14,2012,18,50.038,1,837
+9,Oak,Quercus velutina,Oak,2.42E+14,2012,18,55.626,1,837
+9,Oak,Quercus velutina,Oak,2.42E+14,2012,18,38.1,1,837
+9,Oak,Quercus velutina,Oak,2.42E+14,2012,18,77.978,1,837
+9,Oak,Quercus velutina,Oak,2.42E+14,2012,18,59.69,1,837
+9,Oak,Quercus palustris,Oak,2.42E+14,2012,18,36.576,1,830
+9,Oak,Quercus palustris,Oak,2.42E+14,2012,18,25.146,1,830
+9,Oak,Quercus alba,Oak,2.42E+14,2012,18,23.876,1,802
+9,Oak,Quercus alba,Oak,2.42E+14,2012,18,27.432,1,802
+9,Oak,Quercus alba,Oak,2.42E+14,2012,18,22.352,1,802
+9,Oak,Quercus alba,Oak,2.42E+14,2012,18,27.94,1,802
+12,Oak,Pinus banksiana,Pine,2.42E+14,2012,18,22.352,1,105
+12,Oak,Juglans cinerea,Walnut,2.42E+14,2012,18,20.32,1,601
+14,Oak,Salix nigra,Willow,2.21E+14,2011,18,23.876,1,922
+14,Oak,Salix nigra,Willow,2.21E+14,2011,18,29.21,1,922
+14,Oak,Fraxinus pennsylvanica,Ash,2.21E+14,2011,18,38.1,1,544
+15,Oak,Sassafras albidum,Other hardwood,2.42E+14,2012,18,27.432,1,931
+15,Oak,Quercus alba,Oak,2.42E+14,2012,18,43.942,1,802
+15,Oak,Prunus serotina,Cherry,2.42E+14,2012,18,40.64,1,762
+15,Oak,Prunus serotina,Cherry,2.42E+14,2012,18,32.258,1,762
+15,Oak,Prunus serotina,Cherry,2.42E+14,2012,18,26.162,1,762
+15,Oak,Prunus serotina,Cherry,2.42E+14,2012,18,33.528,1,762
+15,Oak,Prunus serotina,Cherry,2.42E+14,2012,18,29.718,1,762
+15,Oak,Prunus serotina,Cherry,2.42E+14,2012,18,34.29,1,762
+15,Oak,Nyssa sylvatica,Black gum,2.42E+14,2012,18,26.67,1,693
+15,Oak,Nyssa sylvatica,Black gum,2.42E+14,2012,18,24.13,1,693
+15,Oak,Nyssa sylvatica,Black gum,2.42E+14,2012,18,29.718,1,693
+15,Oak,Nyssa sylvatica,Black gum,2.42E+14,2012,18,34.798,1,693
+15,Oak,Nyssa sylvatica,Black gum,2.42E+14,2012,18,21.844,1,693
+15,Oak,Nyssa sylvatica,Black gum,2.42E+14,2012,18,26.162,1,693
+17,Oak,Sassafras albidum,Other hardwood,1.45E+13,2013,18,26.67,1,931
+17,Oak,Sassafras albidum,Other hardwood,1.45E+13,2013,18,22.86,1,931
+17,Oak,Sassafras albidum,Other hardwood,1.45E+13,2013,18,35.306,1,931
+17,Oak,Quercus velutina,Oak,1.45E+13,2013,18,22.098,1,837
+17,Oak,Prunus serotina,Cherry,1.45E+13,2013,18,21.59,1,762
+17,Oak,Prunus serotina,Cherry,1.45E+13,2013,18,33.528,1,762
+17,Oak,Celtis occidentalis,Hackberry,1.45E+13,2013,18,34.29,1,462
+20,Oak,Quercus palustris,Oak,1.69E+14,2010,18,35.052,1,830
+20,Oak,Quercus palustris,Oak,1.69E+14,2010,18,44.45,1,830
+20,Oak,Quercus palustris,Oak,1.69E+14,2010,18,66.548,1,830
+20,Oak,Quercus palustris,Oak,1.69E+14,2010,18,36.068,1,830
+20,Oak,Carya glabra,Hickory,1.69E+14,2010,18,28.448,1,403
+20,Oak,Carya glabra,Hickory,1.69E+14,2010,18,26.67,1,403
+20,Oak,Acer saccharinum,Maple,1.69E+14,2010,18,38.354,1,317
+20,Oak,Acer saccharinum,Maple,1.69E+14,2010,18,22.86,1,317
+20,Oak,Acer saccharinum,Maple,1.69E+14,2010,18,29.718,1,317
+20,Oak,Acer saccharinum,Maple,1.69E+14,2010,18,23.368,1,317
+20,Oak,Acer saccharinum,Maple,1.69E+14,2010,18,44.45,1,317
+20,Oak,Acer saccharinum,Maple,1.69E+14,2010,18,25.654,1,317
+20,Oak,Acer saccharinum,Maple,1.69E+14,2010,18,23.622,1,317
+20,Oak,Acer saccharinum,Maple,1.69E+14,2010,18,23.114,1,317
+20,Oak,Acer saccharinum,Maple,1.69E+14,2010,18,20.828,1,317
+22,Oak,Ulmus americana,Elm,2.21E+14,2011,18,30.988,1,972
+22,Oak,Ulmus americana,Elm,2.21E+14,2011,18,21.082,1,972
+22,Oak,Ulmus americana,Elm,2.21E+14,2011,18,20.574,1,972
+22,Oak,Quercus palustris,Oak,2.21E+14,2011,18,28.194,1,830
+22,Oak,Quercus alba,Oak,2.21E+14,2011,18,79.248,1,802
+22,Oak,Malus,Other hardwood,2.21E+14,2011,18,23.114,1,660
+22,Oak,Carya ovata,Hickory,2.21E+14,2011,18,30.988,1,407
+22,Oak,Betula nigra,Birch,2.21E+14,2011,18,37.338,1,373
+22,Oak,Acer saccharinum,Maple,2.21E+14,2011,18,38.354,1,317
+22,Oak,Acer saccharinum,Maple,2.21E+14,2011,18,35.052,1,317
+22,Oak,Acer saccharinum,Maple,2.21E+14,2011,18,45.212,1,317
+22,Oak,Acer saccharinum,Maple,2.21E+14,2011,18,47.752,1,317
+22,Oak,Acer saccharinum,Maple,2.21E+14,2011,18,47.498,1,317
+22,Oak,Acer saccharinum,Maple,2.21E+14,2011,18,31.75,1,317
+22,Oak,Acer saccharinum,Maple,2.21E+14,2011,18,34.798,1,317
+24,Oak,Pinus strobus,Pine,2.42E+14,2012,18,24.384,1,129
+24,Oak,Pinus strobus,Pine,2.42E+14,2012,18,20.574,1,129
+24,Oak,Pinus strobus,Pine,2.42E+14,2012,18,21.336,1,129
+26,Other,Prunus serotina,Cherry,1.69E+14,2010,18,30.734,1,762
+26,Other,Prunus serotina,Cherry,1.69E+14,2010,18,41.402,1,762
+26,Other,Prunus serotina,Cherry,1.69E+14,2010,18,28.702,1,762
+26,Other,Prunus serotina,Cherry,1.69E+14,2010,18,47.752,1,762
+26,Other,Morus rubra,Other hardwood,1.69E+14,2010,18,25.654,1,682
+26,Other,Acer negundo,Maple,1.69E+14,2010,18,22.098,1,313
+27,Other,Ulmus americana,Elm,2.21E+14,2011,18,23.114,1,972
+27,Other,Ulmus americana,Elm,2.21E+14,2011,18,22.352,1,972
+27,Other,Prunus serotina,Cherry,2.21E+14,2011,18,23.368,1,762
+27,Other,Prunus serotina,Cherry,2.21E+14,2011,18,22.352,1,762
+28,Other,Ulmus americana,Elm,1.45E+13,2013,18,22.098,1,972
+28,Other,Ulmus americana,Elm,1.45E+13,2013,18,23.622,1,972
+28,Other,Quercus rubra,Oak,1.45E+13,2013,18,65.532,1,833
+28,Other,Quercus rubra,Oak,1.45E+13,2013,18,28.702,1,833
+28,Other,Fraxinus pennsylvanica,Ash,1.45E+13,2013,18,21.59,1,544
+28,Other,Acer saccharum,Maple,1.45E+13,2013,18,39.37,1,318
+28,Other,Acer saccharum,Maple,1.45E+13,2013,18,42.418,1,318
+28,Other,Acer saccharum,Maple,1.45E+13,2013,18,45.466,1,318
+28,Other,Acer rubrum,Maple,1.45E+13,2013,18,23.368,1,316
+28,Other,Acer rubrum,Maple,1.45E+13,2013,18,20.32,1,316
+28,Other,Acer rubrum,Maple,1.45E+13,2013,18,37.592,1,316
+28,Other,Acer rubrum,Maple,1.45E+13,2013,18,21.59,1,316
+28,Other,Acer rubrum,Maple,1.45E+13,2013,18,30.734,1,316
+28,Other,Acer rubrum,Maple,1.45E+13,2013,18,26.162,1,316
+28,Other,Acer rubrum,Maple,1.45E+13,2013,18,31.75,1,316
+28,Other,Acer rubrum,Maple,1.45E+13,2013,18,34.798,1,316
+28,Other,Acer rubrum,Maple,1.45E+13,2013,18,24.13,1,316
+28,Other,Acer rubrum,Maple,1.45E+13,2013,18,25.4,1,316
+30,Other,Ulmus americana,Elm,2.21E+14,2012,18,31.75,1,972
+30,Other,Populus deltoides,Poplar,2.21E+14,2012,18,44.196,1,742
+30,Other,Populus deltoides,Poplar,2.21E+14,2012,18,38.862,1,742
+30,Other,Populus deltoides,Poplar,2.21E+14,2012,18,36.322,1,742
+30,Other,Populus deltoides,Poplar,2.21E+14,2012,18,56.896,1,742
+30,Other,Populus deltoides,Poplar,2.21E+14,2012,18,51.054,1,742
+30,Other,Populus deltoides,Poplar,2.21E+14,2012,18,46.228,1,742
+30,Other,Populus deltoides,Poplar,2.21E+14,2012,18,52.578,1,742
+30,Other,Populus deltoides,Poplar,2.21E+14,2012,18,48.26,1,742
+30,Other,Populus deltoides,Poplar,2.21E+14,2012,18,46.99,1,742
+30,Other,Populus deltoides,Poplar,2.21E+14,2012,18,71.374,1,742
+30,Other,Populus deltoides,Poplar,2.21E+14,2012,18,75.438,1,742
+30,Other,Morus rubra,Other hardwood,2.21E+14,2012,18,30.988,1,682
+30,Other,Morus rubra,Other hardwood,2.21E+14,2012,18,22.606,1,682
+31,Other,Quercus bicolor,Oak,2.42E+14,2012,18,23.622,1,804
+31,Other,Fraxinus pennsylvanica,Ash,2.42E+14,2012,18,38.608,1,544
+31,Other,Fraxinus pennsylvanica,Ash,2.42E+14,2012,18,38.354,1,544
+31,Other,Fraxinus pennsylvanica,Ash,2.42E+14,2012,18,23.622,1,544
+31,Other,Fraxinus pennsylvanica,Ash,2.42E+14,2012,18,30.734,1,544
+31,Other,Fraxinus pennsylvanica,Ash,2.42E+14,2012,18,37.846,1,544
+31,Other,Fraxinus pennsylvanica,Ash,2.42E+14,2012,18,25.908,1,544
+31,Other,Acer saccharinum,Maple,2.42E+14,2012,18,42.926,1,317
+31,Other,Acer saccharinum,Maple,2.42E+14,2012,18,25.654,1,317
+31,Other,Acer saccharinum,Maple,2.42E+14,2012,18,40.894,1,317
+33,Other,Ulmus rubra,Elm,1.69E+14,2010,18,23.114,1,975
+33,Other,Ulmus americana,Elm,1.69E+14,2010,18,25.146,1,972
+33,Other,Ulmus americana,Elm,1.69E+14,2010,18,26.162,1,972
+33,Other,Ulmus americana,Elm,1.69E+14,2010,18,34.798,1,972
+33,Other,Ulmus americana,Elm,1.69E+14,2010,18,44.196,1,972
+33,Other,Quercus macrocarpa,Oak,1.69E+14,2010,18,46.228,1,823
+33,Other,Populus deltoides,Poplar,1.69E+14,2010,18,69.85,1,742
+33,Other,Populus deltoides,Poplar,1.69E+14,2010,18,50.8,1,742
+33,Other,Populus deltoides,Poplar,1.69E+14,2010,18,54.102,1,742
+33,Other,Juglans nigra,Walnut,1.69E+14,2010,18,22.352,1,602
+33,Other,Acer saccharinum,Maple,1.69E+14,2010,18,29.972,1,317
+33,Other,Acer saccharinum,Maple,1.69E+14,2010,18,21.844,1,317
+33,Other,Acer saccharinum,Maple,1.69E+14,2010,18,25.654,1,317

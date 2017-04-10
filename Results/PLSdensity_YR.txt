@@ -1,0 +1,65 @@
+[[1]]
+[[1]][[1]]
+[[1]][[1]]$`West density`
+[1] 41.32793
+
+[[1]][[1]]$`West SE`
+[1] 2.763947
+
+[[1]][[1]]$`East density`
+[1] 175.1579
+
+[[1]][[1]]$`East SE`
+[1] 6.40166
+
+
+[[1]][[2]]
+
+	Two Sample t-test
+
+data:  density by Line
+t = 19.639, df = 3366, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 120.4692 147.1908
+sample estimates:
+mean in group East mean in group West 
+         175.15795           41.32793 
+
+
+
+[[2]]
+[[2]][[1]]
+[[2]][[1]]$`Mean density island`
+[1] 85.81832
+
+[[2]][[1]]$`se density island`
+[1] 8.519587
+
+
+[[2]][[2]]
+Call:
+   aov(formula = density ~ Line, data = denstot)
+
+Terms:
+                     Line Residuals
+Sum of Squares   15181704 138954018
+Deg. of Freedom         2      3687
+
+Residual standard error: 194.1328
+Estimated effects may be unbalanced
+
+[[2]][[3]]
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = density ~ Line, data = denstot)
+
+$Line
+                  diff        lwr        upr     p adj
+Island-East  -89.33963 -117.10370  -61.57556 0.0000000
+West-East   -133.83002 -149.52564 -118.13439 0.0000000
+West-Island  -44.49039  -72.10124  -16.87954 0.0004713
+
+
+
