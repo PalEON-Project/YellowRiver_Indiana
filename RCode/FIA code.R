@@ -9,6 +9,9 @@
   #calculate the average plot densities for the east and west
   #as well as the island
 
+
+
+#DENSITY
 #setwd("~/Dropbox/YR_Manuscript/YellowRiver_Indiana")
 setwd("~/Documents/YR/YellowRiver_Indiana")
 
@@ -57,8 +60,11 @@ sink()
 #also need FIA composition and average diameter
 #for this we do not want just plot-level density: use the other data file
 
-fiadbh=read.csv("./Data/FIA_dbh_composition.csv")
 
+#COMPOSITION and DIAMETER
+
+fiadbh=read.csv("./Data/FIA_dbh_composition.csv")
+dim(fiadbh) #170 x 10
 
 #first: dbh
 #calculate averages, SE, and run a t-test to compare
@@ -72,8 +78,7 @@ dbh <-t.test(dbh~Buffer,var.equal=T, data=other.oak)
 dbh
 
 
-#standard error function with code to remove NAs
-se <- function(x) sqrt(var(x,na.rm=TRUE)/length(na.omit(x)))
+
 
 #subset the other.oak data to just select the Buffer = Oak trees and to just select the Buffer = Other trees
 oak<-subset(other.oak, Buffer=="Oak")
@@ -82,6 +87,7 @@ other <-subset(other.oak, Buffer=="Other")
 #calculate the standard error (and just for fun to compare to the means reported by the t-tests, I have calculated the mean)
 #variables are: Available_Water_Storage_5_20, 
 
+#se function
 se <- function(x) sqrt(var(x,na.rm=TRUE)/length(na.omit(x)))
 
 se_diam_oak <- se(oak$dbh)
@@ -107,30 +113,30 @@ sink()
 #tbe two buffers are already subsetted by "oak and "other"
 #species composition of vegetation in WEST
 library(plyr)
-A<-count(oak,"L3_tree1") #freq table west, oak
-View(A)
-str(A)
+O<-count(oak,"PalEON_L3") #freq table west, oak
+View(O)
+str(O)
 
-Percentage<-(A$freq/nrow(oak))*100 #add percentages based on # in oak/west
-WestC<-cbind(A,Percentage)
-WestC
+Percentage3<-(O$freq/nrow(oak))*100 #add percentages based on # in oak/west
+WestFIAcomp<-cbind(O,Percentage3)
+WestFIAcomp
 
 
-write.table(WestC,file='./Data/WestFIAComp.csv', sep=",", col.names=NA)
+write.table(WestFIAcomp,file='./Data/WestFIAComp.csv', sep=",", col.names=NA)
 
 #species composition of vegetation in EAST
 
-B<-count(other,"L3_tree1")
-View(B)
-str(B)
+Ot<-count(other,"PalEON_L3")
+View(Ot)
+str(Ot)
 
-Percentage1<-B$freq/nrow(other)*100
-EastC<-cbind(B,Percentage1)
-EastC
+Percentage4<-Ot$freq/nrow(other)*100 #percentage of trees: so #trees divided by total trees
+EastFIAcomp<-cbind(Ot,Percentage4)
+EastFIAcomp
 
-write.table(EastC,file='./Data/EastFIAComp.csv', sep=",", col.names=NA)
-
-
+write.table(EastFIAcomp,file='./Data/EastFIAComp.csv', sep=",", col.names=NA)
+sum(EastFIAcomp$Percentage4[1:8]) #checkin everything adds up
+sum(WestFIAcomp$Percentage3[1:13]) ##checkin everything adds up
 
 
 
