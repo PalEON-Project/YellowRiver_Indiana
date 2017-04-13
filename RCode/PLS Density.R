@@ -1,7 +1,7 @@
 #4-3-2017
 #historic density
 
-setwd("~/Dropbox/YR_Manuscript/YellowRiver_Indiana")
+setwd("~/Documents/YR/YellowRiver_Indiana")
 
 wdens = read.csv("./Data/West_Density_4-2017.csv",stringsAsFactors = FALSE)
 edens = read.csv("./Data/East_Density_4-2017.csv",stringsAsFactors = FALSE)
@@ -99,8 +99,10 @@ dim(isl) #[1] 322
 
 
 mid=mean(isl$density) #[1] 85.81832
-sid
+mid
 sid=sd(isl$density,na.rm=TRUE)/sqrt(length(which(!is.na(isl$density))))#[1] 8.519587
+sid
+
 
 island=list(mid,sid)
 names(island)<-c("Mean density island", "se density island")

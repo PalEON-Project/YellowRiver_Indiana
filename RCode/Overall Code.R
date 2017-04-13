@@ -1,4 +1,4 @@
-setwd("~/Dropbox/YR_Manuscript/YellowRiver_Indiana")
+setwd("~/Documents/YR/YellowRiver_Indiana")
 
 treess=read.csv("./Data/EWAllData2-28.csv")
 dim(treess) #6126, [1] 6126   56
@@ -7,26 +7,27 @@ View(treess)
 str(treess$MUKEY)
 
 
+#mote text for more tests
 
 #####running counts, #corners and #trees
   E=subset(treess,Line=="East")
-    nrow(E) #3122
+    nrow(E) #3122 points in the east
     Etree<-subset(E, TreeNo=='tree1' | TreeNo=='tree2'| TreeNo=='tree3'| TreeNo=='tree4')
-      nrow(Etree) #3059
+      nrow(Etree) #3059 trees in the east
           ET=subset(E,Group_=='Oak' | Group_=='Other')
             nrow(ET) #3059, just a check :)
       Ewater<-subset(E, Group_=='Water')
-        nrow(Ewater) #46
+        nrow(Ewater) #46 water points in the east
       Eprairie<-subset(E, Group_=="No tree")
-        nrow(Eprairie) #17
+        nrow(Eprairie) #17 prairie points in the east
   W=subset(treess,Line=="West")
-    nrow(W) #3004
+    nrow(W) #3004 points in the west
     Wtree<-subset(W, TreeNo=='tree1' | TreeNo=='tree2'| TreeNo=='tree3'| TreeNo=='tree4')
-      nrow(Wtree) #2633
+      nrow(Wtree) #2633 trees in the west
           WT=subset(W,Group_=='Oak' | Group_=='Other')
             nrow(WT) #2633, just a check :)
       Wwater<-subset(W, Group_=='Water')
-        nrow(Wwater) #222
+        nrow(Wwater) #223
       Wprairie<-subset(W, Group_=="No tree")
         nrow(Wprairie) #148
       
@@ -314,50 +315,59 @@ write.table(EastM,file='./Data/EastMod.csv', sep=",", col.names=NA)
 #################################
 
 #species composition of vegetation in WEST
-A<-count(WWW,"L3_tree1") #freq table west, oak
+
+#for the FIA data, percent composition is out of all TREES, not points
+#so the subsetted dataframes should be the TREES ones not the total points one
+library(plyr)
+A<-count(Wtree,"L3_tree1") #freq table west, oak
 View(A)
 str(A)
 
-Percentage<-(A$freq/nrow(WWW))*100 #add percentages based on # in oak/west
+Percentage<-(A$freq/nrow(Wtree))*100 #add percentages based on # in oak/west
 WestC<-cbind(A,Percentage)
 WestC
+sum(WestC$Percentage)
 
 
-write.table(WestC,file='./Data/WestComp.csv', sep=",", col.names=NA)
+write.table(WestC,file='./Data/WestComp4-11-17.csv', sep=",", col.names=NA)
 
 #species composition of vegetation in EAST
 
-B<-count(EEE,"L3_tree1")
+B<-count(Etree,"L3_tree1")
 View(B)
 str(B)
 
-Percentage1<-B$freq/nrow(EEE)*100
+Percentage1<-B$freq/nrow(Etree)*100
 EastC<-cbind(B,Percentage1)
 EastC
 
-write.table(EastC,file='./Data/EastComp.csv', sep=",", col.names=NA)
+write.table(EastC,file='./Data/EastComp4-11-17.csv', sep=",", col.names=NA)
 
 ###oak breakdown in WEST
-c<-count(WWW,"verbatim")
+c<-count(Wtree,"verbatim")
 View(c)
 str(c)
 
-Percentage<-c$freq/nrow(WWW)*100
-OakCBR<-cbind(c,Percentage)
+Percentage2<-c$freq/nrow(Wtree)*100
+OakCBR<-cbind(c,Percentage2)
 OakCBR
 str(OakCBR)
 
-write.table(OakCBR,file='./Data/WestcompBreakdown.csv', sep=",", col.names=NA)
+write.table(OakCBR,file='./Data/WestcompBreakdown4-11-17.csv', sep=",", col.names=NA)
 
-###oak breakdown in EAST
-cc<-count(EEE,"verbatim")
-View(cc)
-str(cc)
 
-Percentage2<-cc$freq/nrow(EEE)*100
-EastCBR<-cbind(cc,Percentage2)
-EastCBR
-str(EastCBR)
+#oak breakdown in EAST
+ob<-count(Etree,"verbatim")
+View(ob)
+str(ob)
+
+Percentage5<-ob$freq/nrow(Etree)*100
+NonoakCBR<-cbind(ob,Percentage5)
+NonoakCBR
+str(NonoakCBR)
+
+write.table(NonoakCBR,file='./Data/EastcompBreakdown4-13-17.csv', sep=",", col.names=NA)
+
 
 
 #######################################################################
@@ -377,9 +387,7 @@ library(ggplot2)
 #right now, using scoresfile from above
 
 
-plot(scoresfile$POINT_X,scoresfile$PC1, xlab="X coordinate", ylab="Component 1 score")
 
-plot(scoresfile$POINT_X,scoresfile$PC1, xlab="X coordinate", ylab="Component 1 score")
 
 scoresfile <- read.csv("scoresEW.csv")
 View(scoresfile)
@@ -396,43 +404,13 @@ g + geom_histogram(binwidth=.25, alpha = 0.75, position = 'identity') +
 
 
 
-#biplot
-#in ggbiplotedited.r, ran function
-#would normall use PCAdata, but NAs so used nona from above
-g=ggbiplotedited(PCA, obs.scale = 1, var.scale = 1, ellipse = FALSE,
-      groups = nona$Line, labels.size = 1, varname.size = 5, varname.adjust = 2, alpha = 0)
-g
-g + geom_point(aes(shape=nona$Line,colour=nona$Line,var.axes=TRUE)) +
-  scale_shape_manual(values=c(4,1), name="Area") +
-  scale_color_manual(values=c('#ffffff33','#00000033'), name="Area") +
-  scale_shape_discrete(name  ="Area")
-  geom_segment(data = scores, aes(x = 0, y = 0, 
-            xend = PC1, yend = PC2), arrow = arrow(length = unit(1/2, "picas")), 
-            color = muted("black"), size = 1)
-
-  g$layers <- c(geom_point(data = scores, aes(x = Comp.1, y = Comp.2, color = "black")), g$layers)
-  g <- g 
 
 
-  geom_point(aes(colour=nona$Line, alpha=0.05)) + 
-  geom_vline(xintercept = 0, colour="blue", alpha = 0.25) +
-  theme_bw() +
-  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
-  theme(legend.direction = 'horizontal', legend.position = 'top') +
-  theme(axis.title = element_text(family = "Trebuchet MS", color="#666666", face="bold", size=22), 
-      axis.text.x  = element_text(size=16), axis.text.y  = element_text(size=16) ) 
 
-#need to get the arrows in front
+ 
   
   
   
-#Figure 3: plotting elevation and scores against distince from intersect line!
-
-linescores = read.csv("EWalldata_distfromline.csv")
-plot(linescores$distance,linescores$DEM)
-#......actually, all on Jodyslinecode_C.R!!!!!!!!
-
-
 
 
 ##################################################
