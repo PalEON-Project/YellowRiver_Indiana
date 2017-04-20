@@ -13,7 +13,7 @@
 
 #DENSITY
 #setwd("~/Dropbox/YR_Manuscript/YellowRiver_Indiana")
-setwd("~/Documents/YR/YellowRiver_Indiana")
+setwd("~/Documents/YellowRiver_IN")
 
 #add text
 

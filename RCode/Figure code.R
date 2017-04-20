@@ -1,6 +1,8 @@
 #figure making
 #3/31/2017
-setwd("~/Dropbox/YR_Manuscript/YellowRiver_Indiana")
+#setwd("~/Dropbox/YR_Manuscript/YellowRiver_Indiana")
+#setwd("~/Documents/YR/YellowRiver_Indiana")
+setwd("~/Documents/YellowRiver_IN")
 #figure 1
 #did not use R: ArcMap, and Transeau's map
 
@@ -13,6 +15,7 @@ library(ggplot2)
 
 #oak/non oak histogram, by x-coordinate distance from midline
 c=read.csv("./Data/EWalldata_distfromline.csv")  #already created csv
+c$distance
 #probably want to subset the oak and non-oak groups
 unique(c$Group_)
 oakother=subset(c, Group_=="Oak" | Group_=="Other") #Now only 5692
@@ -42,6 +45,9 @@ h + geom_histogram(binwidth=1000, alpha = 0.75, position = 'identity') +
         panel.grid.minor = element_blank()) +
   theme(axis.text=element_text(size=24),
         axis.title=element_text(size=28,face="bold"))
+
+
+
 
 
 #CODE FOR WRITING PNG
@@ -107,32 +113,13 @@ PCA<-prcomp(na.omit(PCAdata[1:9]), retx=TRUE, scale. = TRUE)
 summary(PCA)
 
 
-#THIS IS IN COLOUR, HAS LABELS
+
 library(ggplot2)
-#RUN THE GGBIPLOTEDITED code
 
-g=ggbiplotedited(PCA, obs.scale = 1, var.scale = 1, ellipse = FALSE,
-                 groups = PCAdata$Line, labels.size = 1, varname.size = 6, 
-                 varname.adjust = 1.5, alpha = 0.5,) +
-                theme_bw() + theme(axis.title = element_text(family = "Trebuchet MS", 
-                                   color="#666666",   face="bold", size=18)) +
-  theme(legend.position = "top") +
-  scale_color_manual(values=c('#ff663e','#751aff'), name="Area")
-g
-png(width = 11, height = 6, units = 'in', res = 300, filename = "./Figures/PCACol.png")
-dev.off()
 
-#This is in colour but has no labels!
-g=ggbiplotedited(PCA, obs.scale = 1, var.scale = 1, ellipse = FALSE,
-                 groups = PCAdata$Line, labels.size = 0, varname.size = 0, varname.adjust = 0, alpha = 0.5,) +
-  theme_bw() + theme(axis.title = element_text(family = "Trebuchet MS", color="#666666", 
-                                               face="bold", size=18)) + theme(legend.position = "top") +
-  scale_color_manual(values=c('#ff663e','#751aff'), name="Area")
-g
+#run ggbiplotedited code!
 
-#for writing PNG!
-png(width = 11, height = 6, units = 'in', res = 300, filename = "./Figures/PCAColNOlabs.png")
-dev.off()
+
 
 
 #b/w labels

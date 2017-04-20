@@ -1,4 +1,4 @@
-setwd("~/Documents/YR/YellowRiver_Indiana")
+setwd("~/Documents/YellowRiver_IN")
 
 treess=read.csv("./Data/EWAllData2-28.csv")
 dim(treess) #6126, [1] 6126   56

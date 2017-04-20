@@ -1,6 +1,6 @@
 #distance from line 
 #3-31
-setwd("~/Dropbox/YR_Manuscript/YellowRiver_Indiana")
+setwd("~/Documents/YellowRiver_IN")
 
 #this code combines Jody's code for density distance from line with Caitlin's 
 #code for oak/non-oak distance from line and code for PC score dist from line
@@ -25,6 +25,7 @@ View(theline)
 
 #TO JOIN THE DISTANCE FROM LINE TO MAIN DATASET:
 #do not use UTM, use albers
+
 
 forline=read.csv("./Data/EWAllData2-28.csv")
 theline = read.csv('./Data/IntersectVertices_Project.csv', stringsAsFactors = FALSE)
@@ -54,7 +55,8 @@ write.csv(forline, file = './Data/EWalldata_distfromline.csv')
 
 
 #PC DISTANCE FROM LINE!
-setwd("~/Dropbox/YR_Manuscript/YellowRiver_Indiana")
+#again, do not use UTM, use Albers
+
 scoresfile=read.csv("./Data/scoresEW.csv",stringsAsFactors = FALSE) #output from PCA with EW assignment
 View(scoresfile)   #this has PC scores, point_x, point_y
 colnames(scoresfile)
@@ -89,6 +91,8 @@ write.csv(scoresfile, file = './Data/PC_distfromline.csv')
 
 #density distance from line
 #needs to use UTM  
+rm(list=ls())
+setwd("~/Documents/YellowRiver_IN")
 
 
 
@@ -97,8 +101,8 @@ thelineUTM = read.csv('./Data/IntersectVertices_UTM.csv', stringsAsFactors = FAL
 density = read.csv('./Data/PLSDensity_Type.csv', stringsAsFactors = FALSE) 
 #NOTE - the YRDensity_Type_Buffer data is in the Albers projection
 
-str(theline)
-head(theline)
+str(thelineUTM)
+head(thelineUTM)
 str(density)
 head(density)
 
@@ -118,6 +122,7 @@ for (i in 1:length(density$POINT_Y)) {
 #add the distance as a new column to the original density dataframe 
 density$distance = distance
 head(density)
+View(density)
 write.csv(density, file = './Data/PLSDensity_Type_Distance.csv')
 
 

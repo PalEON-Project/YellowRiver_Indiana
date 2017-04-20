@@ -1,7 +1,8 @@
 #4-3-2017
 #historic density
 
-setwd("~/Documents/YR/YellowRiver_Indiana")
+#setwd("~/Documents/YR/YellowRiver_Indiana")
+setwd("~/Documents/YellowRiver_IN")
 
 wdens = read.csv("./Data/West_Density_4-2017.csv",stringsAsFactors = FALSE)
 edens = read.csv("./Data/East_Density_4-2017.csv",stringsAsFactors = FALSE)
