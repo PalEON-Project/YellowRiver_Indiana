@@ -33,7 +33,7 @@ library(Rcpp)
 version <- "1.6-1" #  version of IN PLS data
 
 # Read in the IN data here
-ind <- read.csv(paste0("data/ndinpls_v", version, ".csv"), stringsAsFactors = FALSE) # version 1.6 
+ind <- read.csv(paste0("Data/ndinpls_v", version, ".csv"), stringsAsFactors = FALSE) # version 1.6 
 
 #Flag original data with L3_tree1 = No data as "NA" 
 ind[ind$L3_tree1 %in% 'No data',] <- NA
@@ -377,7 +377,7 @@ colnames(test.correct) <- c('Pair', 'kappa', 'zeta', 'theta', 'phi', 'tau')
 require(plyr)
 corrections <- join(data.frame(Pair), data.frame(test.correct), type="left")
 
-write.csv(corrections, 'data/correction_factors.csv')
+write.csv(corrections, 'Data/correction_factors.csv')
 
 
-write.csv(final.data, paste0("outputs/indiana_final_data_for_dens_est.csv"))
+write.csv(final.data, paste0("Outputs/indiana_final_data_for_dens_est.csv"))
