@@ -380,4 +380,4 @@ corrections <- join(data.frame(Pair), data.frame(test.correct), type="left")
 write.csv(corrections, 'Data/correction_factors.csv')
 
 
-write.csv(final.data, paste0("Outputs/indiana_final_data_for_dens_est.csv"))
+write.csv(final.data, paste0("Data/indiana_final_data_for_dens_est.csv"))
