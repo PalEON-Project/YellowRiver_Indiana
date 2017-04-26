@@ -319,7 +319,7 @@ write.table(EastM,file='./Data/EastMod.csv', sep=",", col.names=NA)
 #for the FIA data, percent composition is out of all TREES, not points
 #so the subsetted dataframes should be the TREES ones not the total points one
 library(plyr)
-A<-count(Wtree,"L3_tree1") #freq table west, oak
+A<-count(Wtree,"L3_tree") #freq table west, oak
 View(A)
 str(A)
 
@@ -333,7 +333,7 @@ write.table(WestC,file='./Data/WestComp4-11-17.csv', sep=",", col.names=NA)
 
 #species composition of vegetation in EAST
 
-B<-count(Etree,"L3_tree1")
+B<-count(Etree,"L3_tree")
 View(B)
 str(B)
 
@@ -344,7 +344,7 @@ EastC
 write.table(EastC,file='./Data/EastComp4-11-17.csv', sep=",", col.names=NA)
 
 ###oak breakdown in WEST
-c<-count(Wtree,"verbatim")
+c<-count(Wtree,"L2_tree")
 View(c)
 str(c)
 
@@ -357,7 +357,7 @@ write.table(OakCBR,file='./Data/WestcompBreakdown4-11-17.csv', sep=",", col.name
 
 
 #oak breakdown in EAST
-ob<-count(Etree,"verbatim")
+ob<-count(Etree,"L2_tree")
 View(ob)
 str(ob)
 
@@ -428,7 +428,7 @@ dim(island)
 #we can look at comp in the island
 library(plyr)
 
-iscomp<-count(island,"L3_tree1")
+iscomp<-count(island,"L3_tree")
 View(iscomp)
 str(iscomp)
 

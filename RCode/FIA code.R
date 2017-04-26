@@ -77,7 +77,7 @@ other.oak<-subset(fiadbh, Buffer=="Other"|Buffer=="Oak")
 View(other.oak)
 #run the t-test for the diameter (in meters)
 dbh <-t.test(dbh~Buffer,var.equal=T, data=other.oak)
-dbh
+dbh  # 33.3 and 35.5
 
 
 
@@ -139,6 +139,33 @@ EastFIAcomp
 write.table(EastFIAcomp,file='./Data/EastFIAComp.csv', sep=",", col.names=NA)
 sum(EastFIAcomp$Percentage4[1:8]) #checkin everything adds up
 sum(WestFIAcomp$Percentage3[1:13]) ##checkin everything adds up
+
+
+
+#species composition BREAKDOWN
+#for WEST
+obr<-count(oak,"FIAspecies")
+View(obr)
+str(obr)
+
+Percentage7<-obr$freq/nrow(oak)*100
+OakFIAbr<-cbind(obr,Percentage7)
+OakFIAbr
+str(OakFIAbr)
+
+#easT
+#for WEST
+otbr<-count(other,"FIAspecies")
+View(otbr)
+str(otbr)
+
+Percentage8<-otbr$freq/nrow(other)*100
+OtherFIAbr<-cbind(otbr,Percentage8)
+OtherFIAbr
+str(OtherFIAbr)
+sum(OakFIAbr$Percentage7[1:18]) #checkin everything adds up
+sum(OtherFIAbr$Percentage8[1:14]) ##checkin everything adds up
+
 
 
 

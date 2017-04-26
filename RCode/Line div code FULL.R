@@ -90,19 +90,20 @@ write.csv(scoresfile, file = './Data/PC_distfromline.csv')
 
 
 #density distance from line
-#needs to use UTM  
+#this does NOT use UTM anymore
+#will stay in Albers
 rm(list=ls())
 setwd("~/Documents/YellowRiver_IN")
 
 
 
 
-thelineUTM = read.csv('./Data/IntersectVertices_UTM.csv', stringsAsFactors = FALSE)
-density = read.csv('./Data/PLSDensity_Type.csv', stringsAsFactors = FALSE) 
+theline = read.csv('./Data/IntersectVertices_project.csv', stringsAsFactors = FALSE)
+density = read.csv('./Data/PLSDensity_Type_4-25-17.csv', stringsAsFactors = FALSE) 
 #NOTE - the YRDensity_Type_Buffer data is in the Albers projection
 
-str(thelineUTM)
-head(thelineUTM)
+str(theline)
+head(theline)
 str(density)
 head(density)
 
@@ -111,7 +112,7 @@ distance = 1:length(density$POINT_Y)
 
 #for loop to get the euclidean distance
 for (i in 1:length(density$POINT_Y)) {
-  dists <- (((thelineUTM$X_UTM - density$POINT_X[i])^2) + ((thelineUTM$Y_UTM - density$POINT_Y[i])^2))^.5 # euclidean distances to all points on the line from the tree
+  dists <- (((theline$POINT_X - density$POINT_X[i])^2) + ((theline$POINT_Y - density$POINT_Y[i])^2))^.5 # euclidean distances to all points on the line from the tree
   # Get nearest distance to line
   distance[i] <- min(dists)
   # is the tree on the east or west side of the line? Negative values = west side (i.e., Oak Buffer)
@@ -123,7 +124,7 @@ for (i in 1:length(density$POINT_Y)) {
 density$distance = distance
 head(density)
 View(density)
-write.csv(density, file = './Data/PLSDensity_Type_Distance.csv')
+write.csv(density, file = './Data/PLSDensity_Type_Distance_4-25-17.csv')
 
 
 

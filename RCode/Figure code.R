@@ -54,10 +54,16 @@ h + geom_histogram(binwidth=1000, alpha = 0.75, position = 'identity') +
 png(width = 10, height = 10, units = 'in', res = 400, filename = "./Figures/ComphistCOL4-6-17.png")
 dev.off()
 
+#
+#
+#
+#
+
 #density histogram!
+library(ggplot2)
 
 
-d=read.csv("./Data/PLSDensity_Type_Distance.csv", stringsAsFactors = FALSE)
+d=read.csv("./Data/PLSDensity_Type_Distance_4-25-17.csv", stringsAsFactors = FALSE)
 sf=subset(d,Type=="Savanna" | Type=='Forest')
 
 #sf$Type= gsub("Forest","zForest",sf$Type)
@@ -215,7 +221,7 @@ dim(WWW) #3004 x 56
 str(WWW)
 
 library(plyr)
-c<-count(WWW,"verbatim")
+c<-count(WWW,"L2_tree")
 View(c)
 str(c)
 
@@ -288,18 +294,65 @@ error.bar <- function(x, y, upper, lower=upper, length=0.1,...){
 #creating plot
 par(mar=c(5,5,5,5))
 P <-barplot(M, ylim=c(-1.5,1.5), col = c('#ff663e','#751aff', 'darkseagreen3'), 
-            names.arg=c("West","East","Eastern \n Oak Area"), ylab='PCA Component 1 Score',
+            names.arg=c(" "," "," "), ylab='PCA Component 1 Score',
             cex.axis=2,cex.lab=2,cex.names=2)       
 error.bar(P,M,S)  
 woot <- error.bar(P,M,S)
 #segments(P, sw, se, si)
 
 #CODE FOR WRITING PNG
-png(width = 7, height = 7, units = 'in', res = 400, filename = "./Figures/islandbar.png")
+png(width = 7, height = 7, units = 'in', res = 400, filename = "./Figures/islandbar_4-25-17.png")
 dev.off()
 
 
-#still need to add code in here for density bar plot!
+
+#
+#
+#
+
+
+#For density bar plot:
+
+iii = read.csv("./Data/DensitywithIsland.csv")
+head(iii)
+dim(iii) #3414
+
+Mad = aggregate(iii$density,list(iii$Line),mean)
+Mad
+Md = Mad[match(c("West","East","Island"),Mad$Group.1),]
+Md
+
+std <- function(x) sd(x)/sqrt(length(x))
+
+Sad = aggregate(iii$density,list(iii$Line),std)
+Sad
+Sd = Sad[match(c("West","East","Island"),Sad$Group.1),]
+
+
+
+
+
+
+#function for error bars
+error.bar <- function(x, y, upper, lower=upper, length=0.1,...){
+  if(length(x) != length(y) | length(y) !=length(lower) | length(lower) != length(upper))
+    stop("vectors must be same length")
+  arrows(x,y+upper, x, y-lower, angle=90, code=3, length=length, ...)
+}
+
+#creating plot
+par(mar=c(5,5,5,5))
+Pd <-barplot(Md$x, ylim=c(0,200),col = c('#ff663e','#751aff', 'darkseagreen3'), 
+             names.arg=c("West","East",""), ylab='Density (trees/ha)',
+             cex.axis=2,cex.lab=2,cex.names=2)       
+error.bar(Pd,Md$x,Sd$x)  
+woot <- error.bar(Pd,Md$x,Sd$x)
+#segments(P, sw, se, si)
+
+#CODE FOR WRITING PNG
+png(width = 7, height = 7, units = 'in', res = 400, filename = "./Figures/islandbarDENS_4-21-17.png")
+dev.off()
+
 
 
 
