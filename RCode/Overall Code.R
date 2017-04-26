@@ -310,6 +310,12 @@ EastM
 write.table(EastM,file='./Data/EastMod.csv', sep=",", col.names=NA)
 
 
+#
+#
+#
+
+
+
 #################################
 #composition
 #################################
@@ -341,7 +347,7 @@ Percentage1<-B$freq/nrow(Etree)*100
 EastC<-cbind(B,Percentage1)
 EastC
 
-write.table(EastC,file='./Data/EastComp4-11-17.csv', sep=",", col.names=NA)
+write.table(EastC,file='./Data/EastComp4-13-17.csv', sep=",", col.names=NA)
 
 ###oak breakdown in WEST
 c<-count(Wtree,"L2_tree")
