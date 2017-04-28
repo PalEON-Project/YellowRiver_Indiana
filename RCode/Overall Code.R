@@ -241,6 +241,8 @@ Wsec1<-sd(wscore$PC1,na.rm=TRUE)/sqrt(length(which(!is.na(wscore$PC1))))
 Esec1<-sd(escore$PC1,na.rm=TRUE)/sqrt(length(which(!is.na(escore$PC1))))
 Wsec1
 Esec1
+PCAse=list(Wsec1,Esec1)
+PCAavgse
 
 pcaT=list(comp1,comp2,comp3)
 pcaT #also added this output to cumulative output above
@@ -250,7 +252,7 @@ pcaT #also added this output to cumulative output above
 
 #output for PCA, loadings and t.tests
 
-allpcaresults = list(outputPCAprelim,pcaT)
+allpcaresults = list(outputPCAprelim,PCAavgse,pcaT)
 sink(file = paste("./Results/AllPCAresults.txt", sep=""))
 allpcaresults
 sink()
@@ -335,7 +337,7 @@ WestC
 sum(WestC$Percentage)
 
 
-write.table(WestC,file='./Data/WestComp4-11-17.csv', sep=",", col.names=NA)
+write.table(WestC,file='./Data/WestComp4-13-17.csv', sep=",", col.names=NA)
 
 #species composition of vegetation in EAST
 
@@ -359,7 +361,7 @@ OakCBR<-cbind(c,Percentage2)
 OakCBR
 str(OakCBR)
 
-write.table(OakCBR,file='./Data/WestcompBreakdown4-11-17.csv', sep=",", col.names=NA)
+write.table(OakCBR,file='./Data/WestcompBreakdown4-13-17.csv', sep=",", col.names=NA)
 
 
 #oak breakdown in EAST
@@ -423,27 +425,33 @@ g + geom_histogram(binwidth=.25, alpha = 0.75, position = 'identity') +
 #island
 #################################################
 
-pc=read.csv("scoresEW.csv") #put xy coordinates on this, by ID
+pc=read.csv("./Data/scoresEW.csv") #put xy coordinates on this, by ID
 dim(pc)
 
-island=read.csv("IslandPoints.csv")
+island=read.csv("./Data/IslandPoints.csv")
 View(island)
 dim(island)
+head(island)
 
 
 #we can look at comp in the island
 library(plyr)
+unique(island$Group_)
+is.rem.nt=island[island$Group_ !="No tree",] #take out two no tree points so do not affect %
+dim(is.rem.nt) #615
+is.rem.nt.w=is.rem.nt[is.rem.nt$Group_ !="Water",] #take out seven water points so do not affect %
+dim(is.rem.nt.w) #608
 
-iscomp<-count(island,"L3_tree")
+iscomp<-count(is.rem.nt.w,"L3_tree")
 View(iscomp)
 str(iscomp)
 
-PercentageIII<-iscomp$freq/nrow(island)*100
+PercentageIII<-iscomp$freq/nrow(is.rem.nt.w)*100
 IslandC<-cbind(iscomp,PercentageIII)
 IslandC
 View(IslandC)
 sum(IslandC$PercentageIII)
-write.table(IslandC,file='IslandComp.csv', sep=",", col.names=NA)
+write.table(IslandC,file='./Data/IslandComp.csv', sep=",", col.names=NA)
 
 
 #this is to join up island data with PCA scores
@@ -489,9 +497,11 @@ ug
 mean(island$DEM)#[1] 249.1943
 sd(island$DEM,na.rm=TRUE)/sqrt(length(which(!is.na(island$DEM))))#[1] 0.03485493
 
+islandPCA = list(mi,si,summary(anovaPC))
 
 
 
+#this codes also 
 #bar graph PCA score 1 island!
 M <- c(mw,me,mi)
 S <- c(sw,se,si)
