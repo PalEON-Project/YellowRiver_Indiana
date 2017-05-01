@@ -152,9 +152,10 @@ Percentage7<-obr$freq/nrow(oak)*100
 OakFIAbr<-cbind(obr,Percentage7)
 OakFIAbr
 str(OakFIAbr)
+write.table(OakFIAbr,file='./Data/WestFIACompBreakdown.csv', sep=",", col.names=NA)
 
 #easT
-#for WEST
+#
 otbr<-count(other,"FIAspecies")
 View(otbr)
 str(otbr)
@@ -167,5 +168,5 @@ sum(OakFIAbr$Percentage7[1:18]) #checkin everything adds up
 sum(OtherFIAbr$Percentage8[1:14]) ##checkin everything adds up
 
 
-
+write.table(OtherFIAbr,file='./Data/EastFIACompBreakdown.csv', sep=",", col.names=NA)
 
