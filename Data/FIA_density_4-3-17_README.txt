@@ -7,16 +7,16 @@ This file has the FIA density data per species per FIA plot for plots in the Yel
 HEADER:
 
 If you have any questions about the data in general or an entry specifically, email peters.63@nd.edu.
-1. spcd - FIA species codes
+1. spcd - FIA species numerical codes
 2. FIAspecies - scientific species names that correspond to the FIA spcd
 3. PalEON_L3 - PalEON level 3 taxa that lumps the species to a standardized level that is used across the PalEON project (www.paleonproject.org)
-4. plt_cn - FIA unique plot identifier
-5. ID - unique identifier that corresponds to the plt_cn but is not as long or unweildy
-6. Buffer - what side of the midline each plot lands. Oak = west of the line, Other = east of the midline
-7. dbh - average diameter at breast height (cm) for each species within each plot
-8. basal_area - sum of the basal area (meter squared per hectare) for all trees of each spcd
-9. n- number of trees of each species in each plot
-10. density - stems per hectare of each tree spcd in the plot
+4. ID - unique identifier that corresponds to the plt_cn but is not as long or unweildy
+5. Buffer - what side of the midline each plot lands. Oak = west of the line, Other = east of the midline
+6. dbh - average diameter at breast height (cm) for each species within each plot
+7. basal_area - sum of the basal area (meter squared per hectare) for all trees of each spcd
+8. n - number of trees of each species in each plot
+9. density - stems per hectare of each tree spcd in the plot
+10. STATECD - FIA state code. 18 = Indiana
 
 
 
@@ -57,7 +57,7 @@ Methodological information
 Sean Dubois in Jack Williams lab from the University of Wisconsin, Madison compiled the FIA data from the FIA DataMart.
 See the PalEON FIA GitHub repository for more details: https://github.com/PalEON-Project/PalEON-FIA/
 Jody Peters used the species_plot_parameters.csv created by Sean to find the plots with actual lat/long coordinates that are in the Yellow River watershed.  That lat/long information is not available in this document or to people not on the PalEON-FIA MOU.  
-Jody then converted the spcd to FIA species and PalEON Level 3 taxa. Because the plt_cn values are long and unwieldy, she added an ID column with unique identifying numbers corresponding to the plt_cn values. Finally she labeled which side of the study area (Oak dominated = "Oak" or Other hardwood dominated = "Other") in the Buffer column. 
+Jody then converted the spcd to FIA species and PalEON Level 3 taxa. Because the plt_cn values are long and unwieldy, she added an ID column with unique identifying numbers corresponding to the plt_cn values. Finally she labeled which side of the study area (Oak dominated = "Oak" which is on the west side of the study area or Other hardwood dominated = "Other" which is on the east side of the study area) in the Buffer column. 
 
 This file was used by Caitlin Broderick to calculate the FIA density on either side of the midline.  To do this Caitlin summed the densities of each species within each plot.  Then averaged the plot densities in the Oak and Other portions of the study area.
 

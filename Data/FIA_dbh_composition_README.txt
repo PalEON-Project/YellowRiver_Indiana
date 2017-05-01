@@ -11,12 +11,11 @@ If you have any questions about the data in general or an entry specifically, em
 2. Buffer - what side of the midline each plot lands. Oak = west of the line, Other = east of the midline
 3. FIAspecies - scientific species names that correspond to the FIA spcd
 4. PalEON_L3 - PalEON level 3 taxa that lumps the species to a standardized level that is used across the PalEON project (www.paleonproject.org)
-5. plt_cn - FIA unique plot identifier
-6. time -  
-7. statecd - FIA state code. 18 = Indiana
-9. dbh - diameter at breast height in centimeters
-10. statuscd - FIA status code. A code indicating whether the sample tree is live, cut, or dead at the time of measurement. Includes dead and cut trees, which are required to estimate aboveground biomass and net annual volume for growth, mortality, and removals. This code is not used when querying data for change estimates. Note: New and replacement plots use only codes 1 and 2. All trees in tree_data5.csv have status code of 1 (live tree). 0 = no status, 1 = live tree, 2 = dead tree, 3 = removed - cut and removed by direct human activity related to harvesting , silviculture or land clearing. This tree is assumed to be utilized.	
-11. spcd - FIA species numerical codes
+5. time - year plot was surveyed ÒMEASYEARÓcolumn from FIA plot table. According to the FIADB User Guide: ÒMeasurement year. The year in which the plot was completed. MEASYEAR may differ from INVYEARÓ
+6. statecd - FIA state code. 18 = Indiana
+7. dbh - diameter at breast height in centimeters
+8. statuscd - FIA status code. A code indicating whether the sample tree is live, cut, or dead at the time of measurement. Includes dead and cut trees, which are required to estimate aboveground biomass and net annual volume for growth, mortality, and removals. This code is not used when querying data for change estimates. Note: New and replacement plots use only codes 1 and 2. All trees in tree_data5.csv have status code of 1 (live tree). 0 = no status, 1 = live tree, 2 = dead tree, 3 = removed - cut and removed by direct human activity related to harvesting , silviculture or land clearing. This tree is assumed to be utilized.	
+9. spcd - FIA species numerical codes
 
 
 ********
