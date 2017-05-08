@@ -144,6 +144,7 @@ for (i in 1:length(finaldens$Type)){
 
 View(finaldens)
 head(finaldens) # FID density basal  POINT_X  POINT_Y Line water notree nodata
+dim(finaldens) #3099
 
 write.csv(finaldens,"./Data/PLSDensity_Type_4-25-17.csv")
 #next step: go to line div code FULL.r to add distance from midline!
@@ -242,40 +243,5 @@ densalloutput
 sink(file = paste("./Results/PLSdensity_YR_4-25-17.txt", sep=""))
 densalloutput
 sink()
-
-
-#bar graph PCA score 1 island!
-Md <- c(mwd,med,mid)
-Sd <- c(swd,sed,sid)
-
-
-
-#function for error bars
-error.bar <- function(x, y, upper, lower=upper, length=0.1,...){
-  if(length(x) != length(y) | length(y) !=length(lower) | length(lower) != length(upper))
-    stop("vectors must be same length")
-  arrows(x,y+upper, x, y-lower, angle=90, code=3, length=length, ...)
-}
-
-#creating plot
-par(mar=c(5,5,5,5))
-Pd <-barplot(Md, ylim=c(0,200),col = c('#ff663e','#751aff', 'darkseagreen3'), 
-            names.arg=c("West","East",""), ylab='Density (trees/ha)',
-            cex.axis=2,cex.lab=2,cex.names=2)       
-error.bar(Pd,Md,Sd)  
-woot <- error.bar(Pd,Md,Sd)
-#segments(P, sw, se, si)
-
-#CODE FOR WRITING PNG
-png(width = 7, height = 7, units = 'in', res = 400, filename = "./Figures/islandbarDENS.png")
-dev.off()
-
-
-#"Eastern \n Oak Area"
-
-
-
-
-
 
 

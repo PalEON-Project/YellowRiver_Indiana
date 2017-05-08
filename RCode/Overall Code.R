@@ -7,7 +7,9 @@ View(treess)
 str(treess$MUKEY)
 
 
-#mote text for more tests
+#add id column just so points are numbered without a "0"
+treess$ID=c(1:length(treess$FID))
+treess$ID
 
 #####running counts, #corners and #trees
   E=subset(treess,Line=="East")
@@ -49,8 +51,8 @@ View(EEE)
 #select rows that i want means and SEs of
 
 
-treesel=treess[,c("ID","Line","TDiameter","temp","precip","DEM","sandtotal_",
-                  "silttotal_","claytotal_","om_r","ksat_r","awc_r","kwfact","NCCPI")]
+treesel=treess[,c("ID","Line","TDiameter","temp","precip","DEM","sandtotal_r",
+                  "silttotal_r","claytotal_r","om_r","ksat_r","awc_r","kwfact","NCCPI")]
 
 
 head(treesel)
@@ -88,7 +90,7 @@ colnames(treesel)
 
 results=list(1,1,1,1,1,1,1,1,1,1,1)
 length(results)
-varnames=c("temp","precip","DEM","sandtotal_","silttotal_","claytotal_",
+varnames=c("temp","precip","DEM","sandtotal_r","silttotal_r","claytotal_r",
            "om_r","ksat_r","awc_r","kwfact","NCCPI")
 length(varnames)   #11
 
@@ -107,8 +109,8 @@ length(results)
 
 #subset cols like above, but for separated E and W tree/points
 
-Wsel=WWW[,c("ID","Line","TDiameter","temp","precip","DEM","sandtotal_",
-            "silttotal_","claytotal_","om_r","ksat_r","awc_r","kwfact","NCCPI")]
+Wsel=WWW[,c("ID","Line","TDiameter","temp","precip","DEM","sandtotal_r",
+            "silttotal_r","claytotal_r","om_r","ksat_r","awc_r","kwfact","NCCPI")]
 as.numeric(Wsel$temp)
 as.numeric(Wsel$precip)
 as.numeric(Wsel$DEM)
@@ -116,8 +118,8 @@ str(Wsel)
 head(Wsel)
 dim(Wsel)  #3004 x 14
 
-Esel=EEE[,c("ID","Line","TDiameter","temp","precip","DEM","sandtotal_",
-            "silttotal_","claytotal_","om_r","ksat_r","awc_r","kwfact","NCCPI")]
+Esel=EEE[,c("ID","Line","TDiameter","temp","precip","DEM","sandtotal_r",
+            "silttotal_r","claytotal_r","om_r","ksat_r","awc_r","kwfact","NCCPI")]
 as.numeric(Esel$temp)
 as.numeric(Esel$precip)
 as.numeric(Esel$DEM)
@@ -130,8 +132,8 @@ seE=rep(0,11)
 meansW=rep(0,11)
 seW=rep(0,11)
 
-lab=c("temp","precip","DEM","sandtotal_",
-      "silttotal_","claytotal_","om_r","ksat_r","awc_r","kwfact","NCCPI")
+lab=c("temp","precip","DEM","sandtotal_r",
+      "silttotal_r","claytotal_r","om_r","ksat_r","awc_r","kwfact","NCCPI")
 length(lab)
 #run the for loop that goes through the selected rows!
 for(i in 4:14){
@@ -173,8 +175,8 @@ sink()
 #sand, silt, clay, awc, ksat, temp, precip, elevation.
 #the scores were added to the YR_Buffer_Clim_Dem_Soils_PCA.csv document.
 names(treess)
-PCAdata<-treess[,c("temp","precip","DEM","sandtotal_",
-                  "silttotal_","claytotal_","om_r","ksat_r","awc_r","Line","ID","POINT_X","POINT_Y")]
+PCAdata<-treess[,c("temp","precip","DEM","sandtotal_r",
+                  "silttotal_r","claytotal_r","om_r","ksat_r","awc_r","Line","ID","POINT_X","POINT_Y")]
 dim(PCAdata) #6126 *p
 View(PCAdata)
 
@@ -538,10 +540,6 @@ hist(treess$TDiameter,xlim=c(0,15),breaks=60)
 range(treess$TDiameter,na.rm=TRUE)
 which(treess$TDiameter == 16)
 #90 for 5, 283 for 6
-library(ggplot2)
-ggplot(data=treess, aes(x=TDiameter)) +
-  geom_bar(stat="bin",binwidth=1) +
-  scale_x_discrete(breaks=seq(1,10,1),limits=c("0","10"))
 
 mean(treess$TDiameter,na.rm=TRUE) #15.7, this is in inches
 

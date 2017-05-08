@@ -107,9 +107,10 @@ dev.off()
 
 #FOR PCA AND BIPLOT!
 treess=read.csv("./Data/EWAllData2-28.csv")
+treess$ID=c(1:length(treess$FID))
 
-PCAdata<-treess[,c("temp","precip","DEM","sandtotal_","silttotal_",
-                   "claytotal_","om_r","ksat_r","awc_r","Line","ID","POINT_X","POINT_Y")]
+PCAdata<-treess[,c("temp","precip","DEM","sandtotal_r","silttotal_r",
+                   "claytotal_r","om_r","ksat_r","awc_r","Line","ID","POINT_X","POINT_Y")]
 
 names(PCAdata)
 names=c("Temp","Precip","DEM","Sand","Silt","Clay","OM","Ksat","Awc","Line","ID","POINT_X","POINT_Y")

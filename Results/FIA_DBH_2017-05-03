@@ -1,0 +1,20 @@
+$FIAdiameter
+
+	Two Sample t-test
+
+data:  dbh by Buffer
+t = -1.0854, df = 168, p-value = 0.2793
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -6.157481  1.788681
+sample estimates:
+  mean in group Oak mean in group Other 
+            33.3248             35.5092 
+
+
+$sediam_oak
+[1] 1.196232
+
+$sediam_other
+[1] 1.676431
+

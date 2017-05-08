@@ -28,28 +28,28 @@ mean in group East mean in group West
 
 [[2]]
 [[2]]$`WEST MEANS`
-        temp       precip          DEM   sandtotal_   silttotal_   claytotal_         om_r 
-   9.8535054 1010.4270971  221.9674186   73.2345770   14.5544608    8.2949168    1.0244374 
-      ksat_r        awc_r       kwfact        NCCPI 
-  55.2572029    0.1015912    0.1372004    0.5308202 
+        temp       precip          DEM  sandtotal_r  silttotal_r  claytotal_r         om_r       ksat_r 
+   9.8535054 1010.4270971  221.9674186   73.2345770   14.5544608    8.2949168    1.0244374   55.2572029 
+       awc_r       kwfact        NCCPI 
+   0.1015912    0.1372004    0.5308202 
 
 [[2]]$`WEST SE`
-        temp       precip          DEM   sandtotal_   silttotal_   claytotal_         om_r 
-0.0013447334 0.2300569594 0.2365314137 0.4209612504 0.2196029455 0.1227800090 0.0173593831 
-      ksat_r        awc_r       kwfact        NCCPI 
-0.6213910876 0.0007903774 0.0016848840 0.0031122932 
+        temp       precip          DEM  sandtotal_r  silttotal_r  claytotal_r         om_r       ksat_r 
+0.0013447334 0.2300569594 0.2365314137 0.4209612504 0.2196029455 0.1227800090 0.0173593831 0.6213910876 
+       awc_r       kwfact        NCCPI 
+0.0007903774 0.0016848840 0.0031122932 
 
 [[2]]$`EAST MEANS`
-        temp       precip          DEM   sandtotal_   silttotal_   claytotal_         om_r 
-   9.9210154 1005.6687505  251.7233113   48.0216177   29.7117590   18.7338821    1.4277514 
-      ksat_r        awc_r       kwfact        NCCPI 
-  18.0454004    0.1506278    0.2449808    0.6843346 
+        temp       precip          DEM  sandtotal_r  silttotal_r  claytotal_r         om_r       ksat_r 
+   9.9210154 1005.6687505  251.7233113   48.0216177   29.7117590   18.7338821    1.4277514   18.0454004 
+       awc_r       kwfact        NCCPI 
+   0.1506278    0.2449808    0.6843346 
 
 [[2]]$`EAST SE`
-        temp       precip          DEM   sandtotal_   silttotal_   claytotal_         om_r 
-0.0011562635 0.2517372717 0.1469927680 0.3192244132 0.1997938492 0.1276956926 0.0186397530 
-      ksat_r        awc_r       kwfact        NCCPI 
-0.3578881000 0.0007046415 0.0015572091 0.0024072946 
+        temp       precip          DEM  sandtotal_r  silttotal_r  claytotal_r         om_r       ksat_r 
+0.0011562635 0.2517372717 0.1469927680 0.3192244132 0.1997938492 0.1276956926 0.0186397530 0.3578881000 
+       awc_r       kwfact        NCCPI 
+0.0007046415 0.0015572091 0.0024072946 
 
 
 [[3]]
@@ -95,7 +95,7 @@ mean in group East mean in group West
           251.7233           221.9674 
 
 
-[[3]]$sandtotal_
+[[3]]$sandtotal_r
 
 	Two Sample t-test
 
@@ -109,7 +109,7 @@ mean in group East mean in group West
           48.02162           73.23458 
 
 
-[[3]]$silttotal_
+[[3]]$silttotal_r
 
 	Two Sample t-test
 
@@ -123,7 +123,7 @@ mean in group East mean in group West
           29.71176           14.55446 
 
 
-[[3]]$claytotal_
+[[3]]$claytotal_r
 
 	Two Sample t-test
 
