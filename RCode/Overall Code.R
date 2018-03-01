@@ -251,13 +251,35 @@ pcaT #also added this output to cumulative output above
 
 
 
-
 #output for PCA, loadings and t.tests
 
 allpcaresults = list(outputPCAprelim,PCAavgse,pcaT)
 sink(file = paste("./Results/AllPCAresults.txt", sep=""))
 allpcaresults
 sink()
+
+
+#histogram and Q-Q plot tests for normality
+hist((scoresfile$PC1)) #the original
+qqnorm(scoresfile$PC1) #the original
+
+#arcsine transformation for negative skew
+qqnorm(asin(scoresfile$PC1))
+hist(asin(scoresfile$PC1))
+
+scoresfile$trans = asin(scoresfile$PC1)
+comptrans=t.test(trans~Line,var.equal=T, data=scoresfile,na.rm=TRUE)
+comptrans #the asin transformed t-test give the same significant result
+
+
+#other transformations tested - these made it worse so were not used
+
+#hist(log(scoresfile$PC1))
+#qqnorm(log(scoresfile$PC1))
+
+#hist((scoresfile$PC1)^2)
+#qqnorm((scoresfile$PC1)^2)
+
 
 
 
